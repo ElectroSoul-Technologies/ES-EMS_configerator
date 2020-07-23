@@ -44,13 +44,61 @@ For more details regarding driver you can check on  [Silicon Labs](https://www.s
 There is no additnal cost for this tool but as of now it only communicates with our own [hardware](https://github.com/ElectroSoul-Technologies/ESP32-RS485_Gateway) with our firmware on it.
 We are planing to make an easy tool for you all with MQTT support and which can integrate with any MQTT broker in near future.
 
-## How to USE
-     
-## ElectroSoul Gateway Configeration Tool
-We have our own configeration tool for configering our EMS according to your needs.
-Find more info about using configeration tool [Here]().
+After sucessfull instation cp2102 com port driver and our EMS software just open our EMS software.
 
-  <a href="http://ems.electrosoul.in/login.php/"><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/01.jpeg" width="600"></a>
+# How to connect ?
+1. Connect EMS with your machine using onboard USB  on EMS system. (Note: make sure that com port is detected on your pc by checking in device manager)
+2. Now open EMS configerator and click connect icon on top right corner in EMS  software.
+<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/01.jpeg" width="600"></a>
+3. On successful connection the connect icon will change and statuse will change to connected and mac address of EMS  will be displayed.
+<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/1.jpeg" width="600"></a>
+(Note: sometime it may hapen that connection timeout occures and error message will pop up dont worry just press OK and try again to connect)
+
+# How to add Wi-Fi credentials ?
+1. Click on Wi-Fi Parameter button located on left pannel area.
+<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/3.jpeg" width="600"></a>
+2. When clicked it will automatic scan available Wi-Fi network from device. Still you can scann network again by scan button.
+3. Click your preferred  SSID and now enter Wi-Fi password and click save button.
+<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/9.jpeg" width="600"></a>
+4.  Wi-Fi credentials will be stores inside EMS memory.
+
+# How to set Serial Setting ?
+1.Click on Serial Setting button located on left pannel area.
+    <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/4.jpeg" width="600"></a>
+2. you can select Baud Rate, Data bit, Stop bit and Parity as per your Slave device configeration.
+ <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/8.jpeg" width="600"></a>
+3. You can also set Timeout time.
+4. Set number of retry if timeout accures.
+5. Set time in milli second between two parameter read.
+6.  Set time in milli second between two slave read. 
+
+# How to set Slave Setting ?
+1.Click on Slave Setting button located on left pannel area.
+    <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/5.jpeg" width="600"></a>
+    
+   2.Steps to configure slave setting:
+   * First set total number of slave connected in Total Slave field.
+   * Set starting slave address  in Start Device ID field.
+   * Now you enable individual parameters you like or if you need all parameters enable Select All check box.
+   * Now you need to set function code as per slave datasheet.
+    (For Read Holding Registor set function code = 3)
+    (For Read Input Registor set function code = 4)
+    If all parameter function code is same you just need to set function code in Change All group box.
+    *  Now set parameter  address in Address field.
+    *  Now select Data type the slave will be responding.
+      <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/7.jpeg" width="600"></a>
+      You can select different responce Data type it includes  different variables 16 bit unsigned integer, 32 bit unsigned integer and 32 bit floating point and different orders.
+BIG ENDIAN
+MID BIG ENDIAN
+ LITTLE ENDIAN
+MID LITTLE ENDIAN
+* You can also set gain for individual parameter as an multiplying factor.
+    gain value will be multiplied in the read value from the slave.
+    for example: 
+    Slave provides Power value as 9876 and gain is set to 0.01 then the result value will be 98.76
+    
+     
+	        
 
 
 
