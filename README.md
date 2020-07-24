@@ -77,8 +77,10 @@ After successful installation cp2102 com port driver and our EMS software just o
     If all parameter function code is same you just need to set function code in Change All group box.
     *  Now set parameter address in Address field.
     *  Now select Data type the slave will be responding.
+      
       <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/7.jpeg" width="600"></a>
-      You can select different response Data types it includes different variables 16-bit unsigned integer, 32-bit unsigned integer, and 32-bit floating-point and different orders.
+      
+      You can select different response Data types it includes different variables 16-bit unsigned integer, 32-bit unsigned integer, and 32-bit floating-point and      different orders.
 BIG ENDIAN
 MID BIG ENDIAN
  LITTLE ENDIAN
