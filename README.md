@@ -55,19 +55,24 @@ After successful installation cp2102 com port driver and our EMS software just o
 
 # How to set Serial Setting?
 1.Click on the Serial Setting button located on the left panel area.
-    <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/4.jpeg" width="600"></a>
+
+ <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/4.jpeg" width="600"></a>
+ 
 2. you can select Baud Rate, Data bit, Stop bit and Parity as per your Slave device configeration.
+ 
  <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/8.jpeg" width="600"></a>
+ 
 3. You can also set Timeout time.
 4. Set number of retry if timeout accures.
 5. Set time in milli second between two parameter read.
-6.  Set time in milli second between two slave read. 
+6. Set time in milli second between two slave read. 
 
 # How to set Slave Setting?
 1.Click on the Slave Setting button located on the left panel area.
+    
     <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/5.jpeg" width="600"></a>
     
-   2.Steps to configure the slave setting:
+2.Steps to configure the slave setting:
    * First set a total number of slaves connected in the Total Slave field.
    * Set starting slave address in Start Device ID field.
    * Now you enable individual parameters you like or if you need all parameters to enable Select All checkbox.
@@ -77,13 +82,13 @@ After successful installation cp2102 com port driver and our EMS software just o
     If all parameter function code is same you just need to set function code in Change All group box.
     *  Now set parameter address in Address field.
     *  Now select Data type the slave will be responding.
-      
-      <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/7.jpeg" width="600"></a>
-      
-      You can select different response Data types it includes different variables 16-bit unsigned integer, 32-bit unsigned integer, and 32-bit floating-point and      different orders.
+    
+ <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/7.jpeg" width="600"></a>
+ 
+ You can select different response Data types it includes different variables 16-bit unsigned integer, 32-bit unsigned integer, and 32-bit floating-point and      different orders.
 BIG ENDIAN
 MID BIG ENDIAN
- LITTLE ENDIAN
+LITTLE ENDIAN
 MID LITTLE ENDIAN
 * You can also set gain for the individual parameters as a multiplying factor.
     the gain value will be multiplied in the read value from the slave.
@@ -101,6 +106,7 @@ In many cases, due to less documentation of slave devices, it may happen that it
 * What will be the gain?
 
 So for easy debugging such an issue, you can connect RS485 cables between EMS device and Slave device and open the Debugging tab.
+
  <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/6.jpeg" width="600"></a>
 
 * Now you need to enter slave ID.
@@ -118,7 +124,9 @@ For example, you read frequency and you get a result value as 4998 so your gain 
 3. You will get random value but not we need it means now we have to try different data types selection for a correct response so try different data type and we are sure that one of the following data types will give you the correct response.:blush:
 4. You will get CRC fail error it means that receiving packet from a slave is not ok and CRC is not valid. So there is a possibility of connection error.
 5. You will get Timeout error.
+
  <a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/10.jpeg" width="600"></a>
+ 
  ## How To  Debug TimeOut Error ?
  * Check that Slave ID is proper.
  * Change Function Code and try.
