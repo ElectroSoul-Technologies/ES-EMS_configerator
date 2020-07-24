@@ -38,10 +38,10 @@ After successful installation cp2102 com port driver and our EMS software just o
 # How to connect?
 1. Connect EMS with your machine using onboard USB  on the EMS system. (Note: make sure that comport is detected on your pc by checking in device manager)
 2. Now open EMS configurator and click connect icon on the top right corner in EMS  software.
-<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/1.jpeg" width="600"></a>
+<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/01.jpeg" width="600"></a>
 3. On a successful connection, the connect icon will change and status will change to connected and the mac address of EMS  will be displayed.
 
-<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/01.jpeg" width="600"></a>
+<a><img src="http://electrosoul.in/product_photo/RS485_Gateway_WiFi/2.jpeg" width="600"></a>
 
 (Note: sometime it may happen that connection timeout occurs and the error message will pop up don't worry just press OK and try again to connect)
 
